@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test GO</title>
+  <style>
+  .hidden_hint{
+    display: none;
+    opacity: 0.3; 
+  }
+  </style>
+</head>
+<body>
+  <form name="test_form" id="test_form_id">
+    
+    <label for="user_name_id"> Enter the user name :</label>
+    <br>
+    <div class="hidden_hint" id="hidden_hint">
+      Username
+    </div>
+    <input type="text" name="user_name" id="user_name_id" onfocus="func()" onblur="funcc()">
+    <br>
+    <label for="phno"> Enter the phone number</label>
+    <input type="tel" name="phone_number" id="phno">
+    <br>
+    <label for="searchbar">This is a search bar</label>
+    <input type="search" name="search" id="searchbar">
+    <br>
+    <input type="submit" value="Submit da Ambi">
+  </form>
+</body>
+<script>
+  var user_hint = document.getElementById("hidden_hint").style
+  
+function func(){
+  user_hint.display = "block"
+}
+function funcc(){
+  user_hint.display = "none"
+}
+</script>
+</html>
