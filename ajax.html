@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax basics</title>
+</head>
+<body>
+    <h3>AJAX TEST</h3>
+    <br>
+    <button onclick="ajaxCalls()"> AJAX eh poidu </button>
+    <div id="ajaxText"></div>
+</body>
+<script>
+function ajaxCalls(){
+    var text = document.getElementById("ajaxText")
+    if(window.XMLDocument){
+        var xhttp = new XMLHttpRequest()
+        xhttp.onreadystatechange = function(){
+            
+            if(xhttp.readyState == 4 && xhttp.status == 200){
+                text.innerHTML = xhttp.responseText
+            }
+        }
+        xhttp.open("GET","hello.txt",true)
+        xhttp.send()
+    }
+    else if(window.ActiveXObject){
+        var xhttp = new ActiveXObject("Microsoft.XMLHttp")
+        xhttp.onreadystatechange = function(){
+            
+            if(xhttp.readyState == 4 && xhttp.status == 200){
+                text.innerHTML = xhttp.responseText
+            }
+        }
+        xhttp.open("GET","hello.txt",true)
+        xhttp.send()
+
+    }
+}
+</script>
+</html>

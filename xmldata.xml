@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmlstyles.xsl"?>
+<gameslist>
+    <game>
+        <name>GTA V</name>
+        <Publisher>Rockstar Games</Publisher>
+        <year>2013</year>
+        <platforms>PC,PS3,PS4,Xbox 360,Xbox One</platforms>
+        <ratings>9.5/10</ratings>
+    </game>
+    <game>
+        <name>GTA Sanandreas</name>
+        <Publisher>Rockstar Games</Publisher>
+        <year>2004</year>
+        <platforms>PC,PS2,PS3,Xbox 360,Android,IOS</platforms>
+        <ratings>8.9/10</ratings>
+    </game>
+    <game>
+        <name>Witcher 3</name>
+        <Publisher>CD Projket</Publisher>
+        <year>2015</year>
+        <platforms>PC,PS3,PS4,Xbox 360,Xbox One</platforms>
+        <ratings>9.2/10</ratings>
+    </game>
+    <game>
+        <name>Assassin Creed:Odessy</name>
+        <Publisher>Ubisoft</Publisher>
+        <year>2019</year>
+        <platforms>PC,PS4,Xbox One</platforms>
+        <ratings>8.2/10</ratings>
+    </game>
+</gameslist>
