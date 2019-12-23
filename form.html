@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - user</title>
+    <script src="forms.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="" id="login_form">
+        <h1>
+            Login
+        </h1>
+        <div class="inputbox">
+            <input type="text" id="uname" onfocus="onfic('uname','u_span')" onblur="onbluck('uname','u_span')">
+            <span somevalue="Username" id="u_span"></span>
+        </div>
+        <div class="inputbox">
+            <input type="password" id="pswd" onfocus="onfic('pswd','p_span')" onblur="onbluck('pswd','p_span')">
+            <span somevalue="Password" id="p_span"></span>
+        </div>
+        <input type="submit" value="Login" class="btn">
+    </form>
+</body>
+</html>

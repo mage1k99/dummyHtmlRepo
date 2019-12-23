@@ -1,0 +1,49 @@
+#login_form{
+width: 360px;
+background-color: #fafafa;
+height: 500px;
+padding: 80px 40px;
+border-radius: 10px;
+position: absolute;
+left: 50%;
+right: 50%;
+transform: translate(-50%);
+}
+.inputbox{
+    border-bottom: 2px solid green;
+    margin: 30px 0;
+    position: relative;
+}
+.inputbox input{
+    outline: none;
+    font-size: large;
+    color: hotpink;
+    border: none;
+    width: 100%;
+    background: none;
+    padding: 0 5px;
+}
+.inputbox span::before{
+    content: attr(somevalue);
+    position: absolute;
+    top: 32%;
+    left: 45px;
+    color: grey;
+    transform: translate(-56%);
+    z-index: -1;
+    transition: .2s;
+}
+.inputbox span::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg,yellow,blue);
+    transition: .2s;
+}
+.focus + span::before{
+    top: -15px;
+}
+.focus + span::after{
+    width: 100%;
+}
